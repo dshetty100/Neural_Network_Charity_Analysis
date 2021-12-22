@@ -1,5 +1,4 @@
 # Neural Network Charity Analysis
-Charity organization analysis using neural networks
 
 ## Overview of the Analysis
 The purpose of this analysis was to create a binary classifier that can predict whether applicants to Alphabet Soup, a charity organization, will be successful with the funding that is provided to them. The analysis was carried out using neural network, and a dataset (charity_data.csv) that contained more than 34,000 organizations that have received funding from Alphabet Soup over the years.
@@ -17,11 +16,6 @@ The purpose of this analysis was to create a binary classifier that can predict 
 * **SPECIAL_CONSIDERATIONS** — Special consideration for application
 * **ASK_AMT** — Funding amount requested
 * **IS_SUCCESSFUL** — Was the money used effectively
-
-The libraries used were:
-* Pandas
-* Scikit-learn
-* Tensorflow
 
 The goal of the analysis was to utilize the Scikit-learn and Tensorflow libraries to develop a model 
 that can be over 75% accurate in predicting whether the applicant will be successful with the funding provided to them by Alphabet Soup.
