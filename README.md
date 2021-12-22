@@ -1,7 +1,7 @@
 # Neural Network Charity Analysis
 
 ## Overview of the Analysis
-The purpose of this analysis was to create a binary classifier that can predict whether applicants to Alphabet Soup, a charity organization, will be successful with the funding that is provided to them. The analysis was carried out using neural network, and a dataset (charity_data.csv) that contained more than 34,000 organizations that have received funding from Alphabet Soup over the years.
+The purpose of this analysis was to create a binary classifier that can predict whether applicants to Alphabet Soup, a charity organization, will be successful with the funding that is provided to them. The analysis was carried out using a neural network, and a dataset (charity_data.csv) that contained more than 34,000 organizations that have received funding from Alphabet Soup over the years.
 
  The dataset included the following columns:
 
@@ -25,7 +25,7 @@ that can be over 75% accurate in predicting whether the applicant will be succes
 ### Preprocessing
 The first step in the analysis was to examine and preprocess the dataset. 
 * The target variable was the **IS_SUCCESSFUL** column.
-* The columns **EIN** and **NAME** in the dataset were unnecessary for the purposes of this model are were dropped from the dataset. 
+* The columns **EIN** and **NAME** in the dataset were unnecessary for this model and were dropped from the dataset. 
 * All other columns were considered potential features for the model.
 
 The next steps in the analysis were to bin, encode, and scale the data.
@@ -33,7 +33,7 @@ The next steps in the analysis were to bin, encode, and scale the data.
 * Any **CLASSIFICATION** with less than 1000 entries were binned into **OTHER**.
 * All "object" type columns were encoded using OneHotEncoder.
 * The **SPECIAL_CONSIDERATIONS_N** column was dropped, as it was redundant to the **SPECIAL_CONSIDERATIONS_Y** column.
-* The preprocessed data was then split into training and testing datasets.
+* The preprocessed data were then split into training and testing datasets.
 * All columns were then scaled using SciKit-Learn's StandardScaler.
 * 
 
@@ -41,8 +41,8 @@ The next steps in the analysis were to bin, encode, and scale the data.
 
 Initially, the model was configured to have the following:
 * two hidden layers -- one with 80 neurons, the second with 45 neurons. This provided with 6,891 total and trainable parameters;
-* both hidden layers used 'relu' activation functions;
-* the output layer used 'sigmoid' activation function.
+* both hidden layers used the 'relu' activation functions;
+* the output layer used the 'sigmoid' activation function.
 This resulted in only 72.6% accuracy for the prediction for this model.
 
 In an attempt to optimize and reach 75% accuracy three different models were built by making the following changes to the first model.
@@ -58,10 +58,9 @@ In an attempt to optimize and reach 75% accuracy three different models were bui
 Unfortunately, all four models were unable to raise the models' accuracy above 73%.
 
 ## Summary
-In summary, neural network was used to analyze charity organization dataset to predict whether applicants to the organization will be 
+In summary, a neural network was used to analyze charity organization dataset to predict whether applicants to the organization will be 
 successful in utilizing the funding that is provided to them. The maximum prediction accuracy that could be achieved for the model 
 was 73%. While this is not high enough accuracy, it is still pretty good for the charity organizers to make their decisions given the 
 complex nature of allocating charity funds to unknown applicants. It would be interesting to seek out ways to improve the accuracy of 
 the model by attempting some other methods, such as random forests or SVM. Improving the quality of input data, such as looking for 
 some outliers, etc., may also help in yielding better results.
-
