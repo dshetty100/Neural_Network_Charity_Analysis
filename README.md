@@ -58,4 +58,10 @@ In an attempt to optimize and reach 75% accuracy three different models were bui
 Unfortunately, all four models were unable to raise the models' accuracy above 73%.
 
 ## Summary
-Neural networks are complex machines. There are lots of moving part to keep track of. There are also lots of "black boxes" which make analyzing both the processes and results into a hazy, vague endeavor. I'm honestly not sure what would help improve accuracy on these models, except for a lot of brute-force experimentation. Increasing parameters or training epochs don't seem to be that effective. Perhaps attempting some other methods, such as random forests or SVM might yield better results. Maybe there are outliers which I just was unable to pin-point in my examinations. That said, 73% accuracy isn't that bad in the world of finance. Could be better -- could be a lot worse.
+In summary, neural network was used to analyze charity organization dataset to predict whether applicants to the organization will be 
+successful in utilizing the funding that is provided to them. The maximum prediction accuracy that could be achieved for the model 
+was 73%. While this is not high enough accuracy, it is still pretty good for the charity organizers to make their decisions given the 
+complex nature of allocating charity funds to unknown applicants. It would be interesting to seek out ways to improve the accuracy of 
+the model by attempting some other methods, such as random forests or SVM. Improving the quality of input data, such as looking for 
+some outliers, etc., may also help in yielding better results.
+
