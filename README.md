@@ -3,20 +3,6 @@
 ## Overview of the Analysis
 The purpose of this analysis was to create a binary classifier that can predict whether applicants to Alphabet Soup, a charity organization, will be successful with the funding that is provided to them. The analysis was carried out using a neural network, and a dataset (charity_data.csv) that contained more than 34,000 organizations that have received funding from Alphabet Soup over the years.
 
- The dataset included the following columns:
-
-* **EIN** and **NAME** — Identification columns
-* **APPLICATION_TYPE** — Alphabet Soup application type
-* **AFFILIATION** — Affiliated sector of industry
-* **CLASSIFICATION** — Government organization classification
-* **USE_CASE** — Use case for funding
-* **ORGANIZATION** — Organization type
-* **STATUS** — Active status
-* **INCOME_AMT** — Income classification
-* **SPECIAL_CONSIDERATIONS** — Special consideration for application
-* **ASK_AMT** — Funding amount requested
-* **IS_SUCCESSFUL** — Was the money used effectively
-
 The goal of the analysis was to utilize the Scikit-learn and Tensorflow libraries to develop a model 
 that can be over 75% accurate in predicting whether the applicant will be successful with the funding provided to them by Alphabet Soup.
 
